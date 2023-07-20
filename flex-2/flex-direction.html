@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/flexbox-style.css">
+    <title>Flexbox Notes</title>
+</head>
+<body>
+<header>    
+    <h1>What is flexbox?</h1>
+    <p><ul><li>It is a more efficient way to lay out, align and distribute space among items in a container (orange is the border of the screen)</li></ul></p>
+</header>
+
+    <section class="types-of-flex">
+      <p>This is all of the properties of flex:</p>
+        <section class="info">
+          <img src="./img-flex/flex-properties.png" alt="">
+          <img src="./img-flex/4-flexbox-axes.jpg" alt="">
+        </section>
+
+      <p>This is the default properties of flex:</p>
+      <img src="./img-flex/axes1.png" alt="">
+      <img src="./img-flex/axes2.png" alt="">
+      <img src="./img-flex/axes3.png" alt="">
+      <img src="./img-flex/axes4.png" alt="">
+    </section>
+
+    <p>The original element without using flex. Notice how the colors does not stretched to bottom without flex implementation<br><br><u>Properties:</u><br>border: 8px solid black; <br>height: 800px;</p>
+    
+    <section class="container">
+        <div class="box box-1">1</div>
+        <div class="box box-2">2</div>
+        <div class="box box-3">3</div>
+        <div class="box box-4">4</div> 
+        <div class="box box-5">5</div>
+        <div class="box box-6">6</div>
+        <div class="box box-7">7</div>
+        <div class="box box-8">8</div>
+        <div class="box box-9">9</div>  
+      </section>
+
+    <div class="flex-direction-properties">
+      <h2><u><ul><li>Flex Direction</li></ul></u></h2>
+      
+      <p><u>Properties:</u> <br> display: flex <br>  height: 150px (the color is streched to bottom)<br>flex-direction: row (left to right) 
+      </p>
+      <section class="container-2">
+        <div class="box box-1">1</div>
+        <div class="box box-2">2</div>
+        <div class="box box-3">3</div>
+        <div class="box box-4">4</div> 
+        <div class="box box-5">5</div>
+        <div class="box box-6">6</div>
+        <div class="box box-7">7</div>
+        <div class="box box-8">8</div>
+        <div class="box box-9">9</div>  
+      </section>
+      
+      <p><u>Properties:</u> <br> display: flex <br>   flex-direction: row-reverse (right to left)
+      </p>
+      <section class="container-3">
+        <div class="box box-1">1</div>
+        <div class="box box-2">2</div>
+        <div class="box box-3">3</div>
+        <div class="box box-4">4</div> 
+        <div class="box box-5">5</div>
+        <div class="box box-6">6</div>
+        <div class="box box-7">7</div>
+        <div class="box box-8">8</div>
+        <div class="box box-9">9</div>  
+      </section>
+      
+      <p><u>Properties:</u> <br> display: flex <br>height: 50vh (height)<br> flex-direction: row-reverse (bottom to top)
+      </p>
+      <section class="container-4">
+        <div class="box box-1">1</div>
+        <div class="box box-2">2</div>
+        <div class="box box-3">3</div>
+        <div class="box box-4">4</div> 
+        <div class="box box-5">5</div>
+        <div class="box box-6">6</div>
+        <div class="box box-7">7</div>
+        <div class="box box-8">8</div>
+        <div class="box box-9">9</div>  
+      </section>
+      
+      <p><u>Properties:</u> <br> display: flex <br>height: 50vh (height)<br> flex-direction: column (top to bottom)
+      </p>
+      <section class="container-5">
+        <div class="box box-1">1</div>
+        <div class="box box-2">2</div>
+        <div class="box box-3">3</div>
+        <div class="box box-4">4</div> 
+        <div class="box box-5">5</div>
+        <div class="box box-6">6</div>
+        <div class="box box-7">7</div>
+        <div class="box box-8">8</div>
+        <div class="box box-9">9</div>  
+      </section>
+      
+      <p><u>Properties:</u> <br> display: flex <br> flex-direction: column-reverse (bottom to top)
+      </p>
+      <section class="container-6">
+        <div class="box box-1">1</div>
+        <div class="box box-2">2</div>
+        <div class="box box-3">3</div>
+        <div class="box box-4">4</div> 
+        <div class="box box-5">5</div>
+        <div class="box box-6">6</div>
+        <div class="box box-7">7</div>
+        <div class="box box-8">8</div>
+        <div class="box box-9">9</div>  
+      </section>
+    </div>
+
+    <section class="navigation">
+      <h2>Navigation Section</h2>
+      <ol>
+
+        <li>
+          <h3>Container Properties</h3>
+        </li>
+        
+        <ul>
+          <a href="./flex-direction.html">
+            <li>Flex Direction</li></a>
+          <a href="./justify-content.html">
+            <li>Justify Content - Main axis</li></a>
+          <a href="./flex-wrap.html">
+            <li>Flex Wrap</li></a>
+          <a href="./align-items.html">
+            <li>Align Items - Cross axis</li></a>
+          <a href="./align-content.html">
+            <li>Align Content - Cross axis</li></a>
+        </ul>
+                  
+      <li>
+        <h3>Flex Item Properties</h3>
+      </li>
+      
+      <ul>
+        <a href="">
+          <li>Order</li>
+        </a>
+        <a href="">
+          <li>Flex</li>
+        </a>
+        <a href="">
+          <li>Flex Grow</li>
+        </a>
+        <a href="">
+          <li>Flex Shrink</li>
+        </a>
+        <a href="">
+          <li>Align Self</li>
+        </a>
+      </ul>
+    </ol>
+  </section>
+
+</body>
+</html>
