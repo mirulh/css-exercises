@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/align-self.css">
+    <title>Align Self</title>
+</head>
+<body>
+<header>
+    
+    <h2>The original element setup (orange is the border of the screen)</h2>
+    <p>
+        <u>Properties:</u>
+        <br>border: 8px solid black; 
+        <br>height: 30vh;
+        <br>display: flex;
+        <br>flex-direction: row;
+
+        <br>width (.box): 200px; <b>(the width is not applied when using with flex no matter the value) </b>
+    </p>
+
+      <section class="container">
+          <div class="box box-1">1</div>
+          <div class="box box-2">2</div>
+          <div class="box box-3">3</div>
+          <div class="box box-4">4</div> 
+          <!-- <div class="box box-5">5</div>
+          <div class="box box-6">6</div>
+          <div class="box box-7">7</div>
+          <div class="box box-8">8</div>
+          <div class="box box-9">9</div>   -->
+        </section>
+
+<!-- Original end -->
+
+     <header>
+         <div class="align-self-properties">
+            <ul>
+                <li>
+                  <u>
+                    <h2>Align Self</h2>
+                  </u>
+                </li>
+                <li style="list-style: none;">
+                  <h3>- Allows you to override align-items on individual flex items</u></h3>
+                </li>
+            </ul>
+     </header>
+        
+      <p><u>Properties(c-36):</u> 
+        <br>width (.box): 200px
+        <br>display: flex 
+        <br>height: 30vh 
+
+        <b>
+          <br>flex-direction: row
+          <br>flex-wrap: wrap
+          <br>justify-content: space-between
+          <br>align-items: center
+        </b> 
+        <br>
+        <br>.box-1 { align-self: flex-end; }
+        <br>.box-2 { align-self: center; }
+        <br>.box-3 { align-self: flex-start; }
+        <br>.box-4 { align-self: stretch; }
+      </p>
+
+    <p>Axis-main: left-to-right (default) 
+      <br>Axis-cross: top-to-bottom (default)
+    </p>
+
+      <section class="container-36">
+        <div class="box box-1">1</div>
+        <div class="box box-2">2</div>
+        <div class="box box-3">3</div>
+        <div class="box box-4">4</div> 
+        <!-- <div class="box box-5">5</div>
+        <div class="box box-6">6</div>
+        <div class="box box-7">7</div>
+        <div class="box box-8">8</div>
+        <div class="box box-9">9</div>   -->
+      </section>
+      
+<!-- end -->
+
+ 
+
+
+    <section class="navigation">
+      <h2>Navigation Section</h2>
+      <ol>
+
+        <li>
+          <h3>Container Properties</h3>
+        </li>
+        
+        <ul>
+          <a href="./flex-direction.html">
+            <li>Flex Direction</li></a>
+          <a href="./justify-content.html">
+            <li>Justify Content - Main axis</li></a>
+          <a href="./flex-wrap.html">
+            <li>Flex Wrap</li></a>
+          <a href="./align-items.html">
+            <li>Align Items - Cross axis</li></a>
+          <a href="./align-content.html">
+            <li>Align Content - Cross axis</li></a>
+        </ul>
+                  
+      <li>
+        <h3>Flex Item Properties</h3>
+      </li>
+      
+      <ul>
+        <a href="">
+          <li>Order</li>
+        </a>
+        <a href="">
+          <li>Flex</li>
+        </a>
+        <a href="">
+          <li>Flex Grow</li>
+        </a>
+        <a href="">
+          <li>Flex Shrink</li>
+        </a>
+        <a href="">
+          <li>Align Self</li>
+        </a>
+      </ul>
+    </ol>
+  </section>
+
+</body>
+</html>

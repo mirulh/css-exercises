@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/flex.css">
+    <title>Flex</title>
+</head>
+<body>
+<header>
+    
+    <h2>The original element setup (orange is the border of the screen)</h2>
+    <p>
+        <u>Properties:</u>
+        <br>border: 8px solid black; 
+        <br>height: 30vh;
+        <br>display: flex;
+        <br>flex-direction: row;
+
+        <br>width (.box): 200px; <b>(the width is not applied when using with flex no matter the value) </b>
+    </p>
+
+      <section class="container">
+          <div class="box box-1">1</div>
+          <div class="box box-2">2</div>
+          <div class="box box-3">3</div>
+          <div class="box box-4">4</div> 
+          <!-- <div class="box box-5">5</div>
+          <div class="box box-6">6</div>
+          <div class="box box-7">7</div>
+          <div class="box box-8">8</div>
+          <div class="box box-9">9</div>   -->
+        </section>
+
+<!-- Original end -->
+
+     <header>
+         <div class="flex-properties">
+            <ul>
+                <li>
+                  <u>
+                    <h2>Flex</h2>
+                  </u>
+                </li>
+                <li style="list-style: none;">
+                  <h3>- Defines how a flex item will grow or shrink to fit the available space in container <br><u>(it's actually a shorthand property for 3 other properties namely, flex-grow,shrink,basis)</u></h3>
+                </li>
+            </ul>
+     </header>
+
+     <header>
+        <div class="flex-basis">
+           <ul>
+               <li>
+                 <u>
+                   <h2>Flex-Basis</h2>
+                 </u>
+               </li>
+               <li style="list-style: none;">
+                 <h3>- Sort of like width, but not. Specifies the ideal size of a flex item BEFORE it's placed into a flex container</u></h3>
+                 Flex basis also stated the initial ideal starting size of some flex items of a container
+               </li>
+           </ul>
+    </header>
+        
+      <p><u>Properties(c-37):</u> 
+        <br><b>flex-basis: 50% (flex basis replace the width of the container) - even the width of the individual item is set to 50% of the container, since it cannot wrap because too many element then they going have to <u>shrink</u></b>
+        <br>display: flex 
+        <br>height: 30vh 
+
+        <b>
+          <br>flex-direction: row
+          <br><s>flex-wrap: wrap</s> (to see how flex basis can works properly, flex-wrap is turned off)
+          <br>justify-content: space-between
+          <br>align-items: center
+        </b> 
+
+      </p>
+
+    <p>Axis-main: left-to-right (default) 
+      <br>Axis-cross: top-to-bottom (default)
+    </p>
+
+      <section class="container-37">
+        <div class="box box-1">1</div>
+        <div class="box box-2">2</div>
+        <div class="box box-3">3</div>
+        <div class="box box-4">4</div> 
+        <!-- <div class="box box-5">5</div>
+        <div class="box box-6">6</div>
+        <div class="box box-7">7</div>
+        <div class="box box-8">8</div>
+        <div class="box box-9">9</div>   -->
+      </section>
+      
+<!-- end -->
+
+      <p><u>Properties(c-38):</u> 
+        <br><b>flex-basis: 50% (flex basis replace the width of the container)</b>
+        <br>display: flex 
+        <br>height: 35vh 
+
+        <b>
+          <br>flex-direction: column (in the column, flex basis is controlling the size of along the main axis, whichever the direction may be. Also flex basis has higher priority than width if ever to use together)
+          <br><s>flex-wrap: wrap</s> (to see how flex basis can works properly, flex-wrap is turned off)
+          <br>justify-content: space-between
+          <br>align-items: center
+        </b> 
+
+      </p>
+
+    <p>Axis-main: left-to-right (default) 
+      <br>Axis-cross: top-to-bottom (default)
+    </p>
+
+      <section class="container-38">
+        <div class="box box-1">1</div>
+        <div class="box box-2">2</div>
+        <div class="box box-3">3</div>
+        <div class="box box-4">4</div> 
+        <!-- <div class="box box-5">5</div>
+        <div class="box box-6">6</div>
+        <div class="box box-7">7</div>
+        <div class="box box-8">8</div>
+        <div class="box box-9">9</div>   -->
+      </section>
+
+      <p>This is the result of using width in flex-direction: column, instead of flex-basis. Noticed how in flex basis the width is strecthed in main axis instead of cross axis (width)</p>
+
+      <img src="./img-flex/flexbasiswidth.png" alt="">
+      
+<!-- end -->
+
+
+<p><h2>Exercise</h2></p>
+
+
+      <p><u>Properties(c-39):</u> 
+        <br><b>flex-basis: 50% (flex basis replace the width of the container) - even the width of the individual item is set to 50% of the container, since it cannot wrap because too many element then they going have to <u>shrink</u></b>
+        <br>display: flex 
+        <br>height: 30vh 
+
+        <b>
+          <br>flex-direction: row
+          <br><s>flex-wrap: wrap</s> (to see how flex basis can works properly, flex-wrap is turned off)
+          <br>justify-content: space-between
+          <br>align-items: center
+        </b> 
+
+      </p>
+
+    <p>Axis-main: left-to-right (default) 
+      <br>Axis-cross: top-to-bottom (default)
+    </p>
+
+      <section class="container-39">
+        <div class="box box-1">1</div>
+        <div class="box box-2">2</div>
+        <div class="box box-3">3</div>
+        <div class="box box-4">4</div> 
+        <div class="box box-5">5</div>
+        <div class="box box-6">6</div>
+        <div class="box box-7">7</div>
+        <div class="box box-8">8</div>
+        <div class="box box-9">9</div>  
+      </section>
+      
+<!-- end -->
+
+ 
+    <section class="navigation">
+      <h2>Navigation Section</h2>
+      <ol>
+
+        <li>
+          <h3>Container Properties</h3>
+        </li>
+        
+        <ul>
+          <a href="./flex-direction.html">
+            <li>Flex Direction</li></a>
+          <a href="./justify-content.html">
+            <li>Justify Content - Main axis</li></a>
+          <a href="./flex-wrap.html">
+            <li>Flex Wrap</li></a>
+          <a href="./align-items.html">
+            <li>Align Items - Cross axis</li></a>
+          <a href="./align-content.html">
+            <li>Align Content - Cross axis</li></a>
+        </ul>
+                  
+      <li>
+        <h3>Flex Item Properties</h3>
+      </li>
+      
+      <ul>
+        <a href="">
+          <li>Order</li>
+        </a>
+        <a href="">
+          <li>Flex</li>
+        </a>
+        <a href="">
+          <li>Flex Grow</li>
+        </a>
+        <a href="">
+          <li>Flex Shrink</li>
+        </a>
+        <a href="">
+          <li>Align Self</li>
+        </a>
+      </ul>
+    </ol>
+  </section>
+
+</body>
+</html>
